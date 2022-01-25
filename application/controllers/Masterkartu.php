@@ -353,6 +353,41 @@ function do_retur(){
 		$this->db->empty_table('tb_zonk');
 		redirect(base_url('masterkartu'));
 	}
-
+	public function cek_pcr1_now(){
+		$data = $this->main_model->manualQuery("select * from screening where datediff(pcr1, now()) = 0");
+		echo "<pre>";
+        var_dump($data);
+		//redirect(base_url('masterkartu'));
+	}
+	public function cek_pcr2_now(){
+		$data = $this->main_model->manualQuery("select * from screening where datediff(pcr2, now()) = 0");
+		echo "<pre>";
+        var_dump($data);
+		//redirect(base_url('masterkartu'));
+	}
+	public function cek_pcr3_now(){
+		$data = $this->main_model->manualQuery("select * from screening where datediff(pcr3, now()) = 0");
+		echo "<pre>";
+        var_dump($data);
+		//redirect(base_url('masterkartu'));
+	}
+	public function cek_pcr4_now(){
+		$data = $this->main_model->manualQuery("select * from screening where datediff(pcr4, now()) = 0");
+		echo "<pre>";
+        var_dump($data);
+		//redirect(base_url('masterkartu'));
+	}
+	public function cek_antigen1_now(){
+		$data = $this->main_model->manualQuery("select * from screening where datediff(antigen1, now()) = 0");
+		echo "<pre>";
+        var_dump($data);
+		//redirect(base_url('masterkartu'));
+	}
+	public function cek_antigen2_now(){
+		$data = $this->main_model->manualQuery("select * from screening where datediff(antigen2, now()) = 2");
+		echo "<pre>";
+        //var_dump($data);
+		redirect(base_url('dashboard'));
+	}
 
 }

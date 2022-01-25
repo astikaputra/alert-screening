@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Kartu Akses SHDP </title>
+  <title>Alert Screening Karyawan SHDP </title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -94,12 +94,12 @@
           <li class="dropdown tasks-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flash"></i>
-              <span class="label label-danger"><?php echo $total_waiting; ?></span>
+              <span class="label label-danger"><?php // echo $total_waiting; ?></span>
             </a>
             <ul class="dropdown-menu">
               <?php if($d_permintaan){ //ada data permintaan
               ?>
-              <li class="header">Ada <?php echo $total_waiting; ?> Permintaan Pekerjaan</li>
+              <li class="header">Ada <?php //echo $total_waiting; ?> Permintaan Pekerjaan</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
@@ -144,13 +144,13 @@
           <li class="dropdown tasks-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-wrench"></i>
-              <span class="label label-warning"><?php echo $total_progress; ?></span>
+              <span class="label label-warning"><?php// echo $total_progress; ?></span>
             </a>
             <ul class="dropdown-menu">
               <?php
               if($d_progress){
               ?>
-              <li class="header">Ada <?php echo $total_progress; ?> pekerjaan masih <i>On Progress</i></li>
+              <li class="header">Ada <?php //echo $total_progress; ?> pekerjaan masih <i>On Progress</i></li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">

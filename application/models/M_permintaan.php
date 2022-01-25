@@ -41,6 +41,27 @@ class M_permintaan extends CI_Model {
     }
   }
 
+  public function manualQuery($q)
+  {
+      $res = $this->db->query($q);
+      return $data = $res->result_array();
+  }
+
+  function ambilDataAntigen2(){
+    $query = $this->db->query("select * from screening where datediff(antigen2, now()) = 2");
+   // return $data;
+   echo "<pre>";
+   var_dump($query);
+    //  if($query->num_rows()>0)
+    // {
+    //   return $query->result();
+    // }
+    // else
+    // {
+    //   return false;
+    // }
+  }
+
 
 
 	function ambilDataPermintaanbyStatus($status){

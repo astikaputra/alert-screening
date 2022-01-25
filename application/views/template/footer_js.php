@@ -1,11 +1,11 @@
 <footer class="main-footer hidden-print">
   <div class="pull-right hidden-xs">
     <b>Version</b> v1.2.0 - build 3124 (master)
-    <a target="_blank" class="btn btn-default btn-xs" href="http://zdienos.com" rel="noopener">User's Manual</a>
-    <a target="_blank" class="btn btn-default btn-xs" href="https://zdienos.com/support" rel="noopener">Report a Bug</a>
+    <a target="_blank" class="btn btn-default btn-xs" href="" rel="noopener">Alert - </a>
+    <a target="_blank" class="btn btn-default btn-xs" href="" rel="noopener">Screening</a>
   </div>
-  <a target="_blank" href="http://zdienos.com" rel="noopener">Help-IT</a> is a personal
-    project, made with <i class="fa fa-heart" style="color: #a94442; font-size: 10px"></i> by <a href="https://twitter.com/zdienos" rel="noopener">@zdienos</a>.
+  <a target="_blank" href="" rel="noopener">Help-IT</a> is a personal
+    project, made with <i class="fa fa-heart" style="color: #a94442; font-size: 10px"></i> by <a href="" rel="noopener">@astikaputra - 2022</a>.
 </footer>
 
 

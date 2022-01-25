@@ -12,7 +12,7 @@
         <li class="header">MENU UTAMA
         </li>
         <li>
-          <a href="<?php echo base_url() .'dashboard';?>">
+          <a href="<?php echo base_url() .'index.php/dashboard';?>">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>

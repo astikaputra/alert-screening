@@ -175,7 +175,7 @@ class Screening extends CI_Controller {
 		$this->load->view('template/footer');
 	}
 	
-	function updatehadir_antigen2($id){
+	function updatehadir_antigen02($id){
 		$hasil = $this->sc->updateDataHadir($id);
 
 		// echo "<pre>";
@@ -187,7 +187,7 @@ class Screening extends CI_Controller {
 		else {
 		  $this->session->set_flashdata('psn_error','Gagal mengubah data ');
 		}
-		redirect(base_url('index.php/screening/antigen2'));
+		redirect(base_url('index.php/screening/antigen02'));
 	   }
 
 }

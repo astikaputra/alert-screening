@@ -41,9 +41,10 @@
                  </thead>
                  <tbody>
                    <?php if ($list_pcr1) {
+                     $no=1;
                       foreach($list_pcr1 as $d) {?>
                      <tr>
-                        <td><?php echo $d->id; ?></td>
+                        <td><?php echo $no; ?></td>
                          <td><?php echo $d->nik; ?></td>
                          <td><?php echo $d->nama; ?></td>
                          <td><?php echo $d->no_hp; ?></td>     
@@ -55,7 +56,7 @@
                              <span class="label label-warning">AKTIVASI</span>
                          <?php } else { ?>
                              <span class="label label-success">Draft</span>
-                         <?php } ?>
+                         <?php } $no++; ?>
                          </td>
                          <td>
                              <?php 

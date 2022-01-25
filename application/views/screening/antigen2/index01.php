@@ -51,11 +51,9 @@
                          <td><?php echo $d->unit; ?></td>             
                          <td>
                          <?php if($d->status == "1"){ ?>
-                             <span class="label label-danger">SEND</span>
-                         <?php } elseif ($d->status == "2"){ ?>
-                             <span class="label label-warning">AKTIVASI</span>
+                             <span class="label label-success">HADIR</span>
                          <?php } else { ?>
-                             <span class="label label-success">Draft</span>
+                             <span class="label label-warning">Draft</span>
                          <?php } ?>
                          </td>
                          <td>
@@ -68,8 +66,9 @@
                              
                              
                             <a class="btn btn-warning btn-xs" href="<?php //echo base_url() . 'penerimaankartu/ubah/' . $d->id_penerimaan ?>" rel="tooltip" title="Ubah"><i class="fa fa-pencil " ></i></a>
-                           <!--    <a class="btn btn-danger btn-xs hapus-data" href="#" data-url="<?php //echo base_url() . 'penerimaankartu/hapus/' . $d->id_penerimaan ?>"  rel="tooltip" title="Hapus"><i class="fa fa-trash-o "></i></a> 
-                             <a class="btn bg-purple btn-xs" href="<?php //echo base_url() . 'penerimaankartu/cetak/' . $d->id_penerimaan ?>" rel="tooltip" title="Cetak"><i class="fa fa-print"></i></a>-->
+                           <!--    <a class="btn btn-danger btn-xs hapus-data" href="#" data-url="<?php //echo base_url() . 'penerimaankartu/hapus/' . $d->id_penerimaan ?>"  rel="tooltip" title="Hapus"><i class="fa fa-trash-o "></i></a> -->
+                            <a class="btn btn-primary btn-xs hadir" href="<?php echo base_url() . 'index.php/screening/updatehadir_antigen02/' . $d->id?>"  rel="tooltip" title="hadir"><i class="fa fa-handshake-o "></i></a> 
+                            <!-- <a class="btn bg-purple btn-xs" href="<?php //echo base_url() . 'penerimaankartu/cetak/' . $d->id_penerimaan ?>" rel="tooltip" title="Cetak"><i class="fa fa-print"></i></a>-->
                              
                              </td>
                          

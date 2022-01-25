@@ -362,5 +362,24 @@ function ambilListDataAntigen02(){
     }
   }
 
+  function updateDataHadir($id){
+   // $id1 = ;
+    $status = "1";
+    $data = array(
+      'status' => $status
+    );
+    //print_r($id);
+     $this->db->where('id', $id);
+     $this->db->update('screening', $data);
+
+    
+
+    if($this->db->affected_rows() > 0){
+      return true;
+    }else {
+      return false;
+    }
+  }
+
 
 }

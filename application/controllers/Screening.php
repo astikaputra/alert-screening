@@ -175,6 +175,19 @@ class Screening extends CI_Controller {
 		$this->load->view('template/footer');
 	}
 	
+	function updatehadir_antigen2($id){
+		$hasil = $this->sc->updateDataHadir($id);
 
+		// echo "<pre>";
+    	// var_dump($hasil);
+
+		if($hasil){
+		  $this->session->set_flashdata('psn_sukses','Data telah diubah');
+		}
+		else {
+		  $this->session->set_flashdata('psn_error','Gagal mengubah data ');
+		}
+		redirect(base_url('index.php/screening/antigen2'));
+	   }
 
 }

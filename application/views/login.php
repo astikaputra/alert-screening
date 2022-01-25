@@ -36,7 +36,7 @@
   <div class="login-box-body">
     <p class="login-box-msg">Silahkan login untuk memulai</p>
 
-    <form action="<?php echo base_url('login/proses'); ?>" method="post">
+    <form action="<?php echo base_url('index.php/login/proses'); ?>" method="post">
       <?php
         if($this->session->flashdata('psn_error')){
           $pesan = $this->session->flashdata('psn_error');

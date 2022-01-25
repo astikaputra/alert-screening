@@ -29,7 +29,7 @@
           <div class="icon">
             <i class="fa fa-flash"></i>
           </div>
-          <a href="<?php echo base_url('screening/pcr01')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?php echo base_url('index.php/screening/pcr01')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <div class="col-lg-2 col-xs-6">
@@ -50,7 +50,7 @@
           <div class="icon">
             <i class="fa fa-flash"></i>
           </div>
-          <a href="<?php echo base_url('screening/pcr02')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?php echo base_url('index.php/screening/pcr02')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
@@ -74,7 +74,7 @@
           <div class="icon">
             <i class="fa fa-wrench"></i>
           </div>
-          <a href="<?php echo base_url('screening/pcr03')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?php echo base_url('index.php/screening/pcr03')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
          <div class="col-lg-2 col-xs-6">
@@ -96,7 +96,7 @@
           <div class="icon">
             <i class="fa fa-wrench"></i>
           </div>
-          <a href="<?php echo base_url('screening/pcr04')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?php echo base_url('index.php/screening/pcr04')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
@@ -120,7 +120,7 @@
           <div class="icon">
             <i class="fa fa-flag-checkered"></i>
           </div>
-          <a href="<?php echo base_url('screening/antigen01')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?php echo base_url('index.php/screening/antigen01')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
 
@@ -146,7 +146,7 @@
           <div class="icon">
             <i class="fa fa-flag-checkered"></i>
           </div>
-          <a href="<?php echo base_url('screening/antigen02')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?php echo base_url('index.php/screening/antigen02')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
@@ -180,7 +180,7 @@
           <div class="icon">
             <i class="fa fa-flash"></i>
           </div>
-          <a href="<?php echo base_url('screening/pcr1')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?php echo base_url('index.php/screening/pcr1')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <div class="col-lg-2 col-xs-6">
@@ -201,7 +201,7 @@
           <div class="icon">
             <i class="fa fa-flash"></i>
           </div>
-          <a href="<?php echo base_url('screening/pcr2')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?php echo base_url('index.php/screening/pcr2')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
@@ -225,7 +225,7 @@
           <div class="icon">
             <i class="fa fa-wrench"></i>
           </div>
-          <a href="<?php echo base_url('screening/pcr3')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?php echo base_url('index.php/screening/pcr3')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
          <div class="col-lg-2 col-xs-6">
@@ -247,7 +247,7 @@
           <div class="icon">
             <i class="fa fa-wrench"></i>
           </div>
-          <a href="<?php echo base_url('screening/pcr4')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?php echo base_url('index.php/screening/pcr4')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
@@ -271,7 +271,7 @@
           <div class="icon">
             <i class="fa fa-flag-checkered"></i>
           </div>
-          <a href="<?php echo base_url('screening/antigen1')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?php echo base_url('index.php/screening/antigen1')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
 
@@ -297,7 +297,7 @@
           <div class="icon">
             <i class="fa fa-flag-checkered"></i>
           </div>
-          <a href="<?php echo base_url('screening/antigen2')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?php echo base_url('index.php/screening/antigen2')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->

@@ -22,7 +22,7 @@ class Login extends CI_Controller {
       $hasil = $this->m->cekLogin();
       if ($hasil) {
         $this->session->set_flashdata('psn_sukses', 'Login Berhasil !');
-        redirect(base_url('dashboard'));
+        redirect(base_url('index.php/dashboard'));
       }
       else {
         $this->session->set_flashdata('psn_error', 'Username atau Password yang anda masukkan salah.');

@@ -44,7 +44,7 @@
                      $no=1;
                       foreach($list_pcr02 as $d) {?>
                      <tr>
-                        <td><?php echo $d->id; ?></td>
+                        <td><?php echo $no; ?></td>
                          <td><?php echo $d->nik; ?></td>
                          <td><?php echo $d->nama; ?></td>
                          <td><?php echo $d->no_hp; ?></td>     
@@ -62,8 +62,7 @@
                              <a class="btn btn-danger btn-xs No HP Tidak Ada" href="#" data-url="<?php //echo base_url() . 'penerimaankartu/hapus/' . $d->id_penerimaan ?>"  rel="tooltip" title="WA tidak bisa dikirim"><i class="fa fa-trash-o "></i></a>
                             <?php } else {?>
                                 <a class="btn btn-info btn-xs" href="<?php //echo base_url() . 'penerimaankartu/terima/' . $d->id_penerimaan ?>" rel="tooltip" title="Kirim Pesan ke WA"><i class="fa fa-wrench"></i></a>                            
-                            <?php } $no++; ?>
-                             
+                            <?php } $no++; ?>                          
                              
                             <a class="btn btn-warning btn-xs" href="<?php //echo base_url() . 'penerimaankartu/ubah/' . $d->id_penerimaan ?>" rel="tooltip" title="Ubah"><i class="fa fa-pencil " ></i></a>                           
                             <a class="btn btn-primary btn-xs hadir" href="<?php echo base_url() . 'index.php/screening/updatehadir_antigen02/' . $d->id?>"  rel="tooltip" title="hadir"><i class="fa fa-handshake-o "></i></a> 

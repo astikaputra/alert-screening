@@ -202,7 +202,7 @@ class M_screening extends CI_Model {
 //AMbil Data list Hari ini
 
 function ambilListDataPcr01(){
-  $this->db->where('datediff(pcr1, now()) = 3');
+  $this->db->where('datediff(pcr1, now()) = 0');
   $query = $this->db->get('screening');
   if($query->num_rows()>0)
   {
@@ -215,7 +215,7 @@ function ambilListDataPcr01(){
 }
 
 function ambilListDataPcr02(){
-  $this->db->where('datediff(pcr2, now()) = 3');
+  $this->db->where('datediff(pcr2, now()) = 0');
   $query = $this->db->get('screening');
   if($query->num_rows()>0)
   {
@@ -228,7 +228,7 @@ function ambilListDataPcr02(){
 }
 
 function ambilListDataPcr03(){
-  $this->db->where('datediff(pcr3, now()) = 3');
+  $this->db->where('datediff(pcr3, now()) = 0');
   $query = $this->db->get('screening');
   if($query->num_rows()>0)
   {
@@ -240,7 +240,7 @@ function ambilListDataPcr03(){
   }
 }
 function ambilListDataPcr04(){
-  $this->db->where('datediff(pcr4, now()) = 3');
+  $this->db->where('datediff(pcr4, now()) = 0');
   $query = $this->db->get('screening');
   if($query->num_rows()>0)
   {
@@ -253,7 +253,7 @@ function ambilListDataPcr04(){
 }
 
 function ambilListDataAntigen01(){
-  $this->db->where('datediff(antigen1, now()) = 3');
+  $this->db->where('datediff(antigen1, now()) = 30');
   $query = $this->db->get('screening');
   if($query->num_rows()>0)
   {
@@ -268,7 +268,7 @@ function ambilListDataAntigen01(){
 
 
 function ambilListDataAntigen02(){
-  $this->db->where('datediff(antigen2, now()) = 3');
+  $this->db->where('datediff(antigen2, now()) = 0');
   $query = $this->db->get('screening');
   if($query->num_rows()>0)
   {

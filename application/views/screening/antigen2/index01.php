@@ -43,6 +43,7 @@
                    <?php if ($list_antigen02) {
                      $no = 1;
                       foreach($list_antigen02 as $d) {?>
+                     
                      <tr>
                         <td><?php echo $no; ?></td>
                          <td><?php echo $d->nik; ?></td>
@@ -74,8 +75,7 @@
                          
                      </tr>
 
-                     <!--echo "<pre>";
-                     var_dump($antigen2);-->
+                     
                      <?php }
                    }?>
                  </tbody>

@@ -94,6 +94,8 @@ class Screening extends CI_Controller {
 		$this->load->view('screening/antigen2/index01');
 		$this->load->view('template/footer_js');
 		$this->load->view('template/footer');
+
+		
 	}
 
 	//Besok

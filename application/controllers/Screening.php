@@ -98,6 +98,35 @@ class Screening extends CI_Controller {
 		
 	}
 
+	function antigen03()
+	{
+		$d_header['title'] = 'Dashboard Antigen 1 Hari ini';
+
+		$d_header['list_antigen03'] = $this->sc->ambilListDataAntigen03();
+		
+		$this->load->view('template/header',$d_header);
+		$this->load->view('template/leftside');
+		//$this->load->view('screening/index', $data);
+		$this->load->view('screening/antigen3/index01');
+		$this->load->view('template/footer_js');
+		$this->load->view('template/footer');
+	}
+
+	function antigen04()
+	{
+		$d_header['title'] = 'Dashboard Antigen 1 Hari ini';
+
+		$d_header['list_antigen04'] = $this->sc->ambilListDataAntigen04();
+		
+		$this->load->view('template/header',$d_header);
+		$this->load->view('template/leftside');
+		$this->load->view('screening/antigen4/index01');
+		$this->load->view('template/footer_js');
+		$this->load->view('template/footer');
+
+		
+	}
+
 	//Besok
 
 	function pcr1()
@@ -177,7 +206,25 @@ class Screening extends CI_Controller {
 		$this->load->view('template/footer');
 	}
 	
-	function updatehadir_antigen02($id){
+
+
+	   function updatehadir_antigen01($id){
+
+		$hasil = $this->sc->updateDataHadir($id);
+
+		// echo "<pre>";
+    	// var_dump($hasil);
+
+		if($hasil){
+		  $this->session->set_flashdata('psn_sukses','Data telah diubah');
+		}
+		else {
+		  $this->session->set_flashdata('psn_error','Gagal mengubah data ');
+		}
+		redirect(base_url('index.php/screening/antigen01'));
+	   }
+
+	   function updatehadir_antigen02($id){
 		$hasil = $this->sc->updateDataHadir($id);
 
 		// echo "<pre>";

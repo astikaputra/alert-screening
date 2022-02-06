@@ -49,6 +49,8 @@ class Dashboard extends CI_Controller {
 		$d_header['total_pcr04'] = $this->sc->ambilDataPcr04();
 		$d_header['total_antigen01'] = $this->sc->ambilDataAntigen01();
 		$d_header['total_antigen02'] = $this->sc->ambilDataAntigen02();
+		$d_header['total_antigen03'] = $this->sc->ambilDataAntigen03();
+		$d_header['total_antigen04'] = $this->sc->ambilDataAntigen04();
 
 
 		$d_header['total_pcr1'] = $this->sc->ambilDataPcr1();
@@ -57,6 +59,8 @@ class Dashboard extends CI_Controller {
 		$d_header['total_pcr4'] = $this->sc->ambilDataPcr4();
 		$d_header['total_antigen1'] = $this->sc->ambilDataAntigen1();
 		$d_header['total_antigen2'] = $this->sc->ambilDataAntigen2();
+		$d_header['total_antigen3'] = $this->sc->ambilDataAntigen3();
+		$d_header['total_antigen4'] = $this->sc->ambilDataAntigen4();
 		
 		// $d_header['d_progress'] = $this->mp->ambilDataPermintaanbyStatusJoin('on progress');
 

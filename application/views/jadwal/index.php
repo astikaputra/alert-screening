@@ -3,7 +3,7 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      <i class="fa fa-calendar"></i> Jadwal Kerja dan Event
+      <i class="fa fa-calendar"></i> Jadwal Screening
     </h1>
 
   </section>
@@ -11,19 +11,24 @@
   <!-- Main content -->
   <section class="content">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-2">
         <div class="box box-primary">
           <div class="box-header with-border">
-            <h4 class="box-title">Pilih Item</h4>
+            <h4 class="box-title">Kategori</h4>
           </div>
           <div class="box-body">
             <!-- the events -->
             <div id="external-events">
-              <div class='external-event' style="background-color:#091B37; border-color:#091B37; color:rgb(255,255,255);" data-color="#091B37">Off</div>
-              <div class='external-event' style="background-color:#2F9550; border-color:#2F9550; color:rgb(255,255,255);" data-color="#2F9550">PH/Cuti</div>
-              <div class='external-event' style="background-color:#45aad1; border-color:#45aad1; color:rgb(255,255,255);" data-color="#45aad1">Event</div>
-              <div class='external-event' style="background-color:#dd4b39; border-color:#dd4b39; color:rgb(255,255,255);" data-color="#dd4b39">Libur Nasional</div>
-             </div>
+              <div class='external-event' style="background-color:#f39c12; border-color:#f39c12; color:rgb(255,255,255);" data-color="#f39c12">ANTIGEN I</div>
+              <div class='external-event' style="background-color:#00c0ef; border-color:#00c0ef; color:rgb(255,255,255);" data-color="#00c0ef">ANTIGEN II</div>
+              <div class='external-event' style="background-color:#0073b7; border-color:#0073b7; color:rgb(255,255,255);" data-color="#0073b7">ANTIGEN III</div>
+              <div class='external-event' style="background-color:#3c8dbc; border-color:#3c8dbc; color:rgb(255,255,255);" data-color="#3c8dbc">ANTIGEN IV</div>
+              <div class='external-event' style="background-color:#dd4b39; border-color:#dd4b39; color:rgb(255,255,255);" data-color="#dd4b39">PCR I</div>
+              <div class='external-event' style="background-color:#605ca8; border-color:#605ca8; color:rgb(255,255,255);" data-color="#605ca8">PCR II</div>
+              <div class='external-event' style="background-color:#f012be; border-color:#f012be; color:rgb(255,255,255);" data-color="#f012be">PCR III</div>
+              <div class='external-event' style="background-color:#001f3f; border-color:#001f3f; color:rgb(255,255,255);" data-color="#001f3f">PCR IV</div>
+              <div class='external-event' style="background-color:#00a65a; border-color:#00a65a; color:rgb(255,255,255);" data-color="#00a65a">HADIR</div>                        
+            </div> 
           </div>
           <div class="box-footer">
             <div class="checkbox">
@@ -93,7 +98,7 @@
                             <li><a class="text-purple" href="#"><i class="fa fa-square"></i></a></li>
                             <li><a class="text-fuchsia" href="#"><i class="fa fa-square"></i></a></li>
                             <li><a class="text-muted" href="#"><i class="fa fa-square"></i></a></li>
-                            <li><a class="text-navy" href="#"><i class="fa fa-square"></i></a></li>
+                            <li><a class="text-navy" href="#"><i class="fa fa-square"></i></a></li>                            
                           </ul>
 
                         </div>

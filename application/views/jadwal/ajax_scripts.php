@@ -53,7 +53,8 @@ $.widget.bridge('uibutton', $.ui.button);
 
 $(document).ready(function(){
 
-    <?php $lokasi= base_url(); $nama = $this->session->userdata('nama_user');?>
+   <?php //$lokasi= base_url(); $nama = $this->session->userdata('nama_user');?>
+   <?php $lokasi= base_url(); $nama = $this->session->userdata('nama_user');?>
     <?php $disable_edit = base_url('jadwal');?>
     <?php $enable_edit = base_url('jadwal/edit');?>
     var enable_edit = "<?php echo $enable_edit ?>";
@@ -77,7 +78,7 @@ $(document).ready(function(){
         // Event Mouseover
         eventMouseover: function(calEvent, jsEvent, view){
 
-            var tooltip = '<div class="event-tooltip">' + calEvent.description + '</div>';
+            var tooltip = '<div class="event-tooltip">' + calEvent.unit + '</div>';
             $("body").append(tooltip);
 
             $(this).mouseover(function(e) {

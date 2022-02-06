@@ -40,9 +40,9 @@
                      </tr>
                  </thead>
                  <tbody>
-                   <?php if ($list_antigen01) {
+                   <?php if ($list_antigen03) {
                      $no=1;
-                      foreach($list_antigen01 as $d) {?>
+                      foreach($list_antigen03 as $d) {?>
                      <tr>
                         <td><?php echo $no; ?></td>
                          <td><?php echo $d->nik; ?></td>
@@ -67,7 +67,7 @@
                              
                              
                             <a class="btn btn-warning btn-xs" href="<?php //echo base_url() . 'penerimaankartu/ubah/' . $d->id_penerimaan ?>" rel="tooltip" title="Ubah"><i class="fa fa-pencil " ></i></a>                           
-                            <a class="btn btn-primary btn-xs hadir" href="<?php echo base_url() . 'index.php/screening/updatehadir_antigen01/' . $d->id?>"  rel="tooltip" title="hadir"><i class="fa fa-handshake-o "></i></a> 
+                            <a class="btn btn-primary btn-xs hadir" href="<?php echo base_url() . 'index.php/screening/updatehadir_antigen03/' . $d->id?>"  rel="tooltip" title="hadir"><i class="fa fa-handshake-o "></i></a> 
                             
                          </td>
                      </tr>

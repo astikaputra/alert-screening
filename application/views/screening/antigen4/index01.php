@@ -7,7 +7,7 @@
 
 
   <div class="pull-right">
-    <a href="<?php //echo base_url('screening/tambah')?>" class="btn btn-primary pull-right"><i class="fa fa-plus"></i> Kirimkan Pesan WA semuanya</a>
+    <a href="<?php //echo base_url('penerimaankartu/tambah')?>" class="btn btn-primary pull-right"><i class="fa fa-plus"></i> Kirimkan Pesan WA semuanya</a>
   </div>
 
   </section>
@@ -30,25 +30,25 @@
                 <table id="dataTable1" class="table table-bordered table-striped">
                  <thead>
                      <tr>
-                         <th>NO</th>
-                         <th>NIK</th>
-                         <th>NAMA</th>
-                         <th>NO HP</th>
-                         <th>UNIT</th>
-                         <th>STATUS</th>                         
-                         <th>AKSI</th>
+                     <th>NO</th>
+                     <th>NIK</th>
+                     <th>NAMA</th>
+                     <th>NO HP</th>
+                     <th>UNIT</th>
+                     <th>STATUS</th>                         
+                     <th>AKSI</th>
                      </tr>
                  </thead>
                  <tbody>
-                   <?php if ($list_antigen01) {
+                   <?php if ($list_antigen04) {
                      $no=1;
-                      foreach($list_antigen01 as $d) {?>
+                      foreach($list_antigen04 as $d) {?>
                      <tr>
                         <td><?php echo $no; ?></td>
                          <td><?php echo $d->nik; ?></td>
                          <td><?php echo $d->nama; ?></td>
                          <td><?php echo $d->no_hp; ?></td>     
-                         <td><?php echo $d->unit; ?></td>             
+                         <td><?php echo $d->unit; ?></td>     
                          <td>
                          <?php if($d->status == "1"){ ?>
                              <span class="label label-success">HADIR</span>
@@ -63,17 +63,15 @@
                              <a class="btn btn-danger btn-xs No HP Tidak Ada" href="#" data-url="<?php //echo base_url() . 'penerimaankartu/hapus/' . $d->id_penerimaan ?>"  rel="tooltip" title="WA tidak bisa dikirim"><i class="fa fa-trash-o "></i></a>
                             <?php } else {?>
                                 <a class="btn btn-info btn-xs" href="<?php //echo base_url() . 'penerimaankartu/terima/' . $d->id_penerimaan ?>" rel="tooltip" title="Kirim Pesan ke WA"><i class="fa fa-wrench"></i></a>                            
-                            <?php } $no++;?>
-                             
+                            <?php } $no++;?>                           
                              
                             <a class="btn btn-warning btn-xs" href="<?php //echo base_url() . 'penerimaankartu/ubah/' . $d->id_penerimaan ?>" rel="tooltip" title="Ubah"><i class="fa fa-pencil " ></i></a>                           
-                            <a class="btn btn-primary btn-xs hadir" href="<?php echo base_url() . 'index.php/screening/updatehadir_antigen01/' . $d->id?>"  rel="tooltip" title="hadir"><i class="fa fa-handshake-o "></i></a> 
+                            <a class="btn btn-primary btn-xs hadir" href="<?php echo base_url() . 'index.php/screening/updatehadir_antigen04/' . $d->id?>"  rel="tooltip" title="hadir"><i class="fa fa-handshake-o "></i></a> 
                             
                          </td>
                      </tr>
 
-                     <!--echo "<pre>";
-                     var_dump($antigen2);-->
+                     
                      <?php }
                    }?>
                  </tbody>

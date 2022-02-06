@@ -13,7 +13,7 @@
     <div class="row">
       <div class="col-lg-2 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-blue">
+        <div class="small-box bg-red">
           <div class="inner">
             <h3>
               <?php
@@ -34,7 +34,7 @@
       </div>
       <div class="col-lg-2 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-blue">
+        <div class="small-box bg-red">
           <div class="inner">
             <h3>
               <?php
@@ -57,7 +57,7 @@
 
       <div class="col-lg-2 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-yellow">
+        <div class="small-box bg-red">
           <div class="inner">
             <h3>
               <?php
@@ -79,7 +79,7 @@
       </div>
          <div class="col-lg-2 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-yellow">
+        <div class="small-box bg-red">
           <div class="inner">
             <h3>
               <?php
@@ -103,7 +103,7 @@
 
       <div class="col-lg-2 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-green">
+        <div class="small-box bg-yellow">
           <div class="inner">
             <h3>
               <?php
@@ -126,7 +126,7 @@
 
       <div class="col-lg-2 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-green">
+        <div class="small-box bg-yellow">
           <div class="inner">
             <h3>
                <?php
@@ -147,6 +147,58 @@
             <i class="fa fa-flag-checkered"></i>
           </div>
           <a href="<?php echo base_url('index.php/screening/antigen02')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-yellow">
+          <div class="inner">
+            <h3>
+               <?php
+                if ($total_antigen03) {
+                    echo $total_antigen03;
+                 } else {
+                     echo "0";
+                 }
+                 // echo "<pre>";
+                //  var_dump($total_antigen2);
+              ?> 
+             
+            </h3>
+
+            <p>ANTIGEN 3 </p>
+          </div>
+          <div class="icon">
+            <i class="fa fa-flag-checkered"></i>
+          </div>
+          <a href="<?php echo base_url('index.php/screening/antigen03')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-yellow">
+          <div class="inner">
+            <h3>
+               <?php
+                if ($total_antigen04) {
+                    echo $total_antigen04;
+                 } else {
+                     echo "0";
+                 }
+                 // echo "<pre>";
+                //  var_dump($total_antigen2);
+              ?> 
+             
+            </h3>
+
+            <p>ANTIGEN 4 </p>
+          </div>
+          <div class="icon">
+            <i class="fa fa-flag-checkered"></i>
+          </div>
+          <a href="<?php echo base_url('index.php/screening/antigen04')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
@@ -208,7 +260,7 @@
 
       <div class="col-lg-2 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-yellow">
+        <div class="small-box bg-blue">
           <div class="inner">
             <h3>
               <?php
@@ -230,7 +282,7 @@
       </div>
          <div class="col-lg-2 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-yellow">
+        <div class="small-box bg-blue">
           <div class="inner">
             <h3>
               <?php
@@ -301,6 +353,50 @@
         </div>
       </div>
       <!-- ./col -->
+      <div class="col-lg-2 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-green">
+          <div class="inner">
+            <h3>
+              <?php
+                if ($total_antigen3) {
+                  echo $total_antigen3;
+               } else {
+                   echo "0";
+               }              
+              ?>
+            </h3>
+
+            <p>ANTIGEN 3</p>
+          </div>
+          <div class="icon">
+            <i class="fa fa-flag-checkered"></i>
+          </div>
+          <a href="<?php echo base_url('index.php/screening/antigen3')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-green">
+          <div class="inner">
+            <h3>
+              <?php
+                if ($total_antigen4) {
+                  echo $total_antigen4;
+               } else {
+                   echo "0";
+               }              
+              ?>
+            </h3>
+
+            <p>ANTIGEN 4</p>
+          </div>
+          <div class="icon">
+            <i class="fa fa-flag-checkered"></i>
+          </div>
+          <a href="<?php echo base_url('index.php/screening/antigen4')?>" class="small-box-footer">info... <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
     </div>
 
    

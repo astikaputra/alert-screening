@@ -193,7 +193,7 @@ $(document).ready(function(){
         // Event Mouseover
         eventMouseover: function(calEvent, jsEvent, view){
 
-            var tooltip = '<div class="event-tooltip">' + calEvent.description + '</div>';
+            var tooltip = '<div class="event-tooltip">' + calEvent.unit +'</div>';
             $("body").append(tooltip);
 
             $(this).mouseover(function(e) {

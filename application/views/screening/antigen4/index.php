@@ -7,7 +7,7 @@
 
 
   <div class="pull-right">
-    <a href="<?php //echo base_url('screening/tambah')?>" class="btn btn-primary pull-right"><i class="fa fa-plus"></i> Kirimkan Pesan WA semuanya</a>
+    <a href="<?php //echo base_url('penerimaankartu/tambah')?>" class="btn btn-primary pull-right"><i class="fa fa-plus"></i> Kirimkan Pesan WA semuanya</a>
   </div>
 
   </section>
@@ -40,9 +40,10 @@
                      </tr>
                  </thead>
                  <tbody>
-                   <?php if ($list_antigen01) {
-                     $no=1;
-                      foreach($list_antigen01 as $d) {?>
+                   <?php if ($list_antigen2) {
+                     $no = 1 ;
+                      foreach($list_antigen2 as $d) {?>
+                      
                      <tr>
                         <td><?php echo $no; ?></td>
                          <td><?php echo $d->nik; ?></td>
@@ -52,9 +53,8 @@
                          <td>
                          <?php if($d->status == "1"){ ?>
                              <span class="label label-success">HADIR</span>
-               
                          <?php } else { ?>
-                             <span class="label label-warning">DRAFT</span>
+                             <span class="label label-warning">Draft</span>
                          <?php } ?>
                          </td>
                          <td>
@@ -63,13 +63,14 @@
                              <a class="btn btn-danger btn-xs No HP Tidak Ada" href="#" data-url="<?php //echo base_url() . 'penerimaankartu/hapus/' . $d->id_penerimaan ?>"  rel="tooltip" title="WA tidak bisa dikirim"><i class="fa fa-trash-o "></i></a>
                             <?php } else {?>
                                 <a class="btn btn-info btn-xs" href="<?php //echo base_url() . 'penerimaankartu/terima/' . $d->id_penerimaan ?>" rel="tooltip" title="Kirim Pesan ke WA"><i class="fa fa-wrench"></i></a>                            
-                            <?php } $no++;?>
+                            <?php } $no++; ?>
                              
                              
-                            <a class="btn btn-warning btn-xs" href="<?php //echo base_url() . 'penerimaankartu/ubah/' . $d->id_penerimaan ?>" rel="tooltip" title="Ubah"><i class="fa fa-pencil " ></i></a>                           
-                            <a class="btn btn-primary btn-xs hadir" href="<?php echo base_url() . 'index.php/screening/updatehadir_antigen01/' . $d->id?>"  rel="tooltip" title="hadir"><i class="fa fa-handshake-o "></i></a> 
-                            
+                            <a class="btn btn-warning btn-xs" href="<?php //echo base_url() . 'penerimaankartu/ubah/' . $d->id_penerimaan ?>" rel="tooltip" title="Ubah"><i class="fa fa-pencil " ></i></a>
+                             <!--<a class="btn btn-primary btn-xs hadir" href="<?php echo base_url() . 'index.php/screening/updatehadir_antigen2/' . $d->id?>"  rel="tooltip" title="hadir"><i class="fa fa-handshake-o "></i></a> -->
+                            <!--   <a class="btn bg-purple btn-xs" href="<?php //echo base_url() . 'penerimaankartu/cetak/' . $d->id_penerimaan ?>" rel="tooltip" title="Cetak"><i class="fa fa-print"></i></a>-->
                          </td>
+                         
                      </tr>
 
                      <!--echo "<pre>";

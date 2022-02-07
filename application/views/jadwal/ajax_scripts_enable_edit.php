@@ -108,7 +108,7 @@ $(document).ready(function(){
         },
         // Get all events stored in database
         eventLimit: true, // allow "more" link when too many events
-        events: base_url+'jadwal/getEvents',
+        events: base_url+'index.php/jadwal/getEvents',
         droppable: true, // this allows things to be dropped onto the calendar
         firstDay: 1,
 
@@ -137,7 +137,7 @@ $(document).ready(function(){
             eventReceive: function(event){
 
                  start = event.start.format('YYYY-MM-DD HH:mm:ss');
-                 $.post(base_url+'jadwal/addEvent', {
+                 $.post(base_url+'index.php/jadwal/addEvent', {
                      title: event.title,
                      description: event.description,
                      color: event.backgroundColor,
@@ -277,7 +277,7 @@ $(document).ready(function(){
     // Handle click on Update Button
     $('.modal').on('click', '#update-event',  function(e){
         if(validator(['title', 'description'])) {
-            $.post(base_url+'jadwal/updateEvent', {
+            $.post(base_url+'index.php/jadwal/updateEvent', {
                 id: currentEvent._id,
                 title: $('#title').val(),
                 description: $('#description').val(),

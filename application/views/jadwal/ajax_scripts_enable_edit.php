@@ -56,8 +56,8 @@ $(document).ready(function(){
     var base_url= "<?php echo $lokasi ?>"; // Here i define the base_url
     var nama= "<?php echo $nama ?>";
 
-    <?php $disable_edit = base_url('jadwal');?>
-    <?php $enable_edit = base_url('jadwal/edit');?>
+    <?php $disable_edit = base_url('index.php/jadwal');?>
+    <?php $enable_edit = base_url('index.php/jadwal/edit');?>
     var enable_edit = "<?php echo $enable_edit ?>";
     var disable_edit = "<?php echo $disable_edit ?>";
 
@@ -158,7 +158,7 @@ $(document).ready(function(){
                 end = start;
             }
 
-               $.post(base_url+'jadwal/dragUpdateEvent',{
+               $.post(base_url+'index.php/jadwal/dragUpdateEvent',{
                 id:event.id,
                 start : start,
                 end :end
@@ -180,7 +180,7 @@ $(document).ready(function(){
                 end = start;
             }
 
-               $.post(base_url+'jadwal/dragUpdateEvent',{
+               $.post(base_url+'index.php/jadwal/dragUpdateEvent',{
                 id:event.id,
                 start : start,
                 end :end

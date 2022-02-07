@@ -55,8 +55,8 @@ $(document).ready(function(){
 
    <?php //$lokasi= base_url(); $nama = $this->session->userdata('nama_user');?>
    <?php $lokasi= base_url(); $nama = $this->session->userdata('nama_user');?>
-    <?php $disable_edit = base_url('jadwal');?>
-    <?php $enable_edit = base_url('jadwal/edit');?>
+    <?php $disable_edit = base_url('index.php/jadwal');?>
+    <?php $enable_edit = base_url('index.php/jadwal/edit');?>
     var enable_edit = "<?php echo $enable_edit ?>";
     var disable_edit = "<?php echo $disable_edit ?>";
     var base_url= "<?php echo $lokasi ?>"; // Here i define the base_url
@@ -69,7 +69,7 @@ $(document).ready(function(){
         },
         // Get all events stored in database
         eventLimit: true, // allow "more" link when too many events
-        events: base_url+'jadwal/getEvents',
+        events: base_url+'index.php/jadwal/getEvents',
         firstDay: 1,
         fixedWeekCount: false,
         selectable: true,

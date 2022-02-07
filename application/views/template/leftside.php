@@ -51,7 +51,7 @@
             </a>
         </li>
         <li> -->
-           <!--  <a href="<?php echo base_url() .'jadwal';?>"><i class="fa fa-calendar"></i>
+           <!--  <a href="<?php //echo base_url() .'jadwal';?>"><i class="fa fa-calendar"></i>
               <span>Jadwal Kerja dan Event</span>
             </a> 
         </li>-->
@@ -71,24 +71,24 @@
         </li>
         <?php } ?>
          <li>
-            <a href="<?php echo base_url() .'Jadwal';?>"><i class="fa fa-calendar"></i>
+            <a href="<?php echo base_url() .'index.php/jadwal';?>"><i class="fa fa-calendar"></i>
               <span>Jadwal Screening</span>
             </a>
         </li>
         <!-- <li>
-            <a href="<?php echo base_url().'Pemberiankartu/valid';?>"><i class="fa fa-tint"></i>
+            <a href="<?php //echo base_url().'Pemberiankartu/valid';?>"><i class="fa fa-tint"></i>
               <span>Validasi Kartu</span>
             </a>
         </li> -->
         <li>
         <!-- <?php if($this->session->userdata('level')=='1'){?>
-            <a href="<?php echo base_url().'Pemberiankartu/retur';?>"><i class="fa fa-info"></i>
+            <a href="<?php //echo base_url().'Pemberiankartu/retur';?>"><i class="fa fa-info"></i>
               <span>Retur Kartu</span>
             </a>
         </li>
     
        <li>
-            <a href="<?php echo base_url().'masterkartu/expired';?>"><i class="fa fa-tree"></i>
+            <a href="<?php //echo base_url().'masterkartu/expired';?>"><i class="fa fa-tree"></i>
               <span>Expired Kartu</span>
             </a>
         </li> -->
